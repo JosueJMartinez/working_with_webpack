@@ -8,4 +8,11 @@ module.exports = merge(common, {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
+  devServer: {
+    // contentBase: "./dist",
+    hot: true,
+    port: 3000,
+    watchContentBase: true,
+    open: true,
+  },
 });
