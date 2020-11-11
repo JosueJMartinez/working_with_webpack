@@ -13,20 +13,17 @@ module.exports = {
           "sass-loader", //1. Turns sass into css
         ],
       },
-			{
+      {
         test: /\.html$/i,
-        use: ['html-loader'],
+        use: ["html-loader"],
       },
-			{
+      {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        use: 
-          {
-            loader: 'file-loader',
-						options:{
-							name:'[name].[hash].[ext]',
-							outputPath:'imgs'
-						}
-          },    
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[hash].[ext]",
+          publicPath: "./",
+        },
       },
     ],
   },

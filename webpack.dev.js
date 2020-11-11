@@ -10,11 +10,11 @@ module.exports = merge(common, {
   },
   devServer: {
     contentBase: "./",
-		host:'0.0.0.0',
+    // host:'0.0.0.0',
     hot: true,
     port: 3000,
     watchContentBase: true,
     open: true,
-		disableHostCheck:true,
+    // disableHostCheck:true,
   },
 });
