@@ -9,10 +9,12 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    // contentBase: "./dist",
+    contentBase: "./",
+		host:'0.0.0.0',
     hot: true,
     port: 3000,
     watchContentBase: true,
     open: true,
+		disableHostCheck:true,
   },
 });
